@@ -1,3 +1,19 @@
 public class Tree {
-    // TODO complete this Tree class to replicate the implementation from the Tree class in adts.py
+    private Integer _root;
+    private Tree[] _subtrees;
+
+    public void __init__(int root, Tree[] subtrees) {
+        this._root = root;
+        if (subtrees != null) {
+            this._subtrees = subtrees;
+        } else {
+            this._subtrees = new Tree[0];
+        }
+    }
+
+    public boolean is_empty() {
+        return this._root == null;
+    }
+
+    // ... rest of Tree implementation in java
 }
